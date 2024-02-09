@@ -1,0 +1,45 @@
+* {
+    transition: background 500ms in_out_cubic, color 500ms in_out_cubic;
+}
+
+Screen {
+    layers: base overlay notes notifications;
+    overflow: hidden;
+}
+
+Body {
+    align: center middle;
+    height: 100%;
+    overflow-y: scroll;
+    width: 100%;
+    background: $surface;
+
+}
+
+Screen>Container {
+    height: 100%;
+    overflow: hidden;
+}
+
+LoginForm {
+    width: 50%;
+    height: auto;
+    margin: 1 0;
+    padding: 1 2;
+    layout: grid;
+    grid-size: 2;
+    grid-rows: 4;
+    grid-columns: 12 1fr;
+    background: $boost;
+    border: wide $background;
+}
+
+LoginForm Button {
+    margin: 0 1;
+    width: 100%;
+}
+
+LoginForm .label {
+    padding: 1 2;
+    text-align: right;
+}
